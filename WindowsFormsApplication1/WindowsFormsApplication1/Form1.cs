@@ -26,6 +26,11 @@ namespace WindowsFormsApplication1
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
+            isChecked();
+        }
+
+        private void isChecked()
+        {
             if (checkBox1.Checked)
             {
                 label1.Text = "Checked";
@@ -36,6 +41,10 @@ namespace WindowsFormsApplication1
             }
         }
 
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            isChecked();
+        }
 
     }
 }
