@@ -24,6 +24,18 @@ namespace WindowsFormsApplication1
             
         }
 
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox1.Checked)
+            {
+                label1.Text = "Checked";
+            }
+            else
+            {
+                label1.Text = "Not Checked";
+            }
+        }
+
 
     }
 }
