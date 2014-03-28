@@ -12,6 +12,7 @@ namespace WindowsFormsApplication1
 {
     public partial class Form1 : Form
     {
+        
         public Form1()
         {
             InitializeComponent();
@@ -19,7 +20,10 @@ namespace WindowsFormsApplication1
 
         private void button1_Click(object sender, EventArgs e)
         {
-            label1.Text = textBox1.Text;
+            listBox1.Items.Add(textBox1.Text);
+            
         }
+
+
     }
 }
