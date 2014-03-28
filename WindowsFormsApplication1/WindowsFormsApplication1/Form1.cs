@@ -46,5 +46,10 @@ namespace WindowsFormsApplication1
             isChecked();
         }
 
+        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
+            listBox1.Items.Add(dateTimePicker1.Value);
+        }
+
     }
 }
